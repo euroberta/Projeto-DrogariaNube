@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style1.css">
+    <title>Droga Nube</title>
+    <!-- Icon para colocar a logo do lado de cima do navegador-->
+    <link rel="shortcut icon" href="icon/drogaNu.icon.png">
+    
+</head>
+<header class="header">     
+        
+    <!-- Cabeçalho do logotipo -->  
+         <a href="Principal.html" class="" title="Droga Nube">
+            <img class="" src="icon/drogaNub.png" data-src="#" alt="Droga Nube">
+        </a>
+        <div class="imgLinkedin">
+            <a href="https://www.linkedin.com/in/roberta-cristina-oliveira/"><img src="icon/Linkedin-logo.png" class="imgLinkedin"></a>
+        </div>      
+</header>
+<body>
+    <!-- Aqui começa a parte da imagem com classe container a imagem estar no CSS-->
+    <div class="container"> 
+
+        <div  class="parte1">
+            <h1> Distribuidora que você pode confiar</h1>
+            <p>Receba sua mercadoria com apenas um clique</p>
+        </div>
+          
+    </div>
+
+<!-- Aqui termina a parte da imagem -->
+ 
+
+<!-- O começo do formulario do web-to-lead  -->
+<div class="cadastro">
+      
+    <div class="form-primeiro"> 
+
+    <!-- Esse parte de Web-to-Lead ao gerar na org e escolhemos os campos que estará aqui na parte de front-end -->
+    <!-- É  muito importante gerar o codigo antes de começar a parte de front-end para quaisquer evento do css. Já configuramos antes--> 
+    <!-- Para quem gosta de fazer formularios como lista <li> <ul>, terá que refazer tudo, pois a salesforce so aceita a  "form" -->  
+    
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+                                   
+      <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+    
+        <input type=hidden name="oid" value="00DDn000009Qv6W">
+
+         <!-- Essa parte é quando o cliente clica em enviar o formulario será direcionado a pagina de baixo no campo value = ""-->
+        <input type=hidden name="retURL" value="#">
+        
+
+                    <h2 class="h2">Preencha o formulário que entraremos em contato</h2>
+  
+                 <div class="form-group">
+                    <label for="first_name">Nome</label>
+                        
+                        <input id="first_name" maxlength="40" name="first_name"
+                        size="20" type="text" placeholder="Digite seu Nome" >
+                 </div>
+                 
+                 <div class="form-group">
+                    <label for="last_name">Sobrenome</label>
+                        
+                        <input id="last_name"  name="last_name" maxlength="80"
+                        size="20" type="text" placeholder="Digite seu Sobrenome" >
+                 </div>
+
+
+                 <div class="form-group">
+                    <label for="company">Empresa</label>
+                        
+                        <input id="company"  name="company"
+                        maxlength="40"  size="20" type="text" placeholder="Digite o nome da sua Empresa" >
+                 </div>
+                   
+                
+                 
+                <div class="form-group">
+                    <label for="cpf">CPF</label>
+                <!-- Observe o id "estranho" é o que a org gerou para ligar os campos do frot-end ao back-end-->    
+                        <input id="00NDn00000RCt0w" maxlength="11" name="00NDn00000RCt0w" size="20"
+                             type="text" placeholder="Digite o seu CPF" >
+                 </div>
+
+                 <div class="form-group">
+                    <label for="mobile" >Celular</label>
+                        
+                        <input id="mobile" maxlength="40" name="mobile" size="20" 
+                             type="text" placeholder="Digite seu número de Whatsapp"  >
+                 </div>
+             
+
+                 <div class="form-group">
+                    <label for="email">E-mail</label>
+                        
+                        <input id="email" maxlength="80" name="email" size="20"
+                             type="text" placeholder="Digite seu e-mail"  >
+                 </div>
+             <!-- Uma observação interessante de saber é que o campo "cidade" city, no objeto Lead é um "subcampo". Não fica visivel no frontend para manipulação. 
+            Mas ele como outros campos existem no backend para manipulação --> 
+                 <div class="form-group">
+                    <label for="city">Cidade</label>
+                        
+                        <input  id="city" maxlength="40" name="city" size="20" 
+                             type="text" placeholder="Digite sua Cidade"  >
+                 </div>  
+                 
+                 <p class="form-grupo">Estado</p>
+
+                 <div class="form-group-list">
+
+                    <label for="state"></label>
+                    
+                    <select class="grupo" select id="state" name="state" title="Estado" >
+                  
+                   <option value="">--- Nenhum ---</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AM">AM</option>
+                        <option value="AP">AP</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>                        
+                        <option value="MG">MG</option>
+                        <option value="MS">MS</option>
+                        <option value="MT">MT</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="PR">PR</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SE">SE</option>
+                        <option value="SP">SP</option>
+                        <option value="TO">TO</option>
+                    </select> 
+                </div>
+                
+                <p class="form-grupo">Qual seu interesse</p>
+    
+                <div class="form-group-list">
+
+                    <label for="qualseuinteresse"></label>
+              
+                    <select class="grupo" id="00NDn00000aXKK8" name="00NDn00000aXKK8" title="Qual seu interesse ?">
+                        
+                        <option value="">--- Nenhum ---</option>
+                        <option value="Orçamento">Orçamento</option>
+                        <option value="Comprar">Compra</option>
+           
+                    </select>
+                    
+            
+        </div>
+            
+                <div>
+                    <button class="btn btn1" input type="submit" name="submit"> Cadastro </Button>
+                </div>  
+      </form> 
+        </div>       
+        <!-- Final do formulario que levará a criação do Lead-->   
+        
+        <!--Segunda parte de div do primeiro formulario -->    
+        <div class="form-primeiro2">
+            <h2>
+                <span class="cinza">Encontre</span><br>
+                <span class="vermelho">uma filial </span>  <br>
+                <span class="cinza">Droga Nube</span></span><br>
+                <span class="azul">+</span> 
+                <span class="vermelho">próxima</span></span><br>
+                <span class="cinza">de você!</span>
+            </h2>
+        </div>     
+</div>
+<!-- Final da segunda parte de div do primeiro formulario -->  
+
+<!-- Aqui começa parte de instagram. Como escolhi fazer o display como grid e 1fr o que é 33% do tamanho da tela.
+Na verdade optei por display Grid em todo projeto. Geralmente a maioria preferem display flex que mais famoso. 
+Mas o  display Grid me atenteu bem!-->
+    <div>
+        <div class="parte5">
+            <h2> Siga a Droga Nube no Instragram</h2>
+            <p>Somos a melhor distribuidora farmacêutica do Brasil </p>
+        </div> 
+        
+        <div class="instagram">
+                <div class="instagram1" >
+                <img src="icon/DrogaNubeinstagram1.png" alt="FotodoInstagram">
+                </div>
+
+                <div class="instagram1">
+                <img src="icon/DrogaNubeInstagram2.png" alt="FotodoInstagram">
+                </div>  
+
+                <div  class="instagram1"> 
+                <img src="icon/DrogaNubeInstagram3.png" alt="FotodoInstagram">
+                </div>
+        </div>
+    </div>
+
+
+   
+    <div class="form-interessado"> 
+        
+       <h2> Entre em contato com a Droga Nube</h2>
+       <p> Ficou interessado? Fale conosco para dúvidas ou sugestões.</p> 
+
+    </div>
+    <!-- Começo do web-to-case -->
+    <!--  IMPORTE GERAR CODIGO antes de fazer front-end. Eu fiz o contrario e deu um trabalhão. O codigo inicial vem com algumas informaçoes é muito importe
+    limpamos é colocar somente a form, input's e id's. CUIDADO : para não remover campos importante. O botão vem como forma de input o que da um pequeno trabalho para configurar-->
+        <div class="form2" >  
+            
+            <div class="form-ultimo1" > 
+                <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+                    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+                    
+                    <input type=hidden name="orgid" value="00DDn000009Qv6W">
+
+                <!-- Essa parte é quando o cliente clica em enviar será direcionado a pagina de baixo no value = ""-->
+                    
+                <input type=hidden name="retURL" value="#">
+                  
+
+                    <!-- Uma observação é que o nome do campo preencido aqui no objeto Caso é um "subcampo". Não fica visivel no frontend para manipulação para administrador no frontend, somente no backend. 
+                     O cliente preenchendo na pagina web, o nome vai para "Nome da Web"  e não em "Nome do contato". Assim o usuario pode entrar em contato com ele para confirmar os dados --> 
+                   
+                      <div class="input"> 
+                        <label for="name"></label>
+                        <input  id="name" maxlength="80" name="name" size="20" type="text" placeholder="Nome *" >
+                    </div> 
+                    
+                    <div class="input">
+                        <label for="email"></label>
+                        <input  id="email" maxlength="80" name="email" size="20" type="text"  placeholder="E-mail *" >
+                    </div>
+
+                   <div class="input">
+                    <label for="phone"></label>
+                    
+                    <input id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="Telefone *" >
+                    </div>      
+            </div>
+
+            <div class="form-ultimo2">
+
+                <div class="input">
+                    <label for="subject"></label>
+                    <input id="subject" maxlength="80" name="subject" size="20" type="text"  placeholder="Assunto *">
+                </div>
+
+                <div class="input">
+                    <label for="description"></label>
+                    <input  name="description" type="text" placeholder="Mensagem*"></input>
+                </div>  
+
+
+                <div>
+                    <button  name="submit"  type="submit" input class="btn" id="external" type="hidden" name="external" value="1"> Enviar </Button>
+              
+                
+                </div>  
+                
+            </form>   
+            <div> 
+                <p class="preenchimentoobrigatorio">*Preenchimento obrigatório. A Droga Nube agradece! </p>
+            </div>
+            <div class="imgLinkedin">
+                <a href="https://www.linkedin.com/in/roberta-cristina-oliveira/"><img src="icon/Linkedin-logo.png" class="imgLinkedin"></a>
+            </div>    
+        </div> 
+    </div>   
+        <!-- Final do web-to-case-->
+
+        <!-- Escolhi ter  dois footer. Um cinza com informações da empresa e logo. Duas div display grid : 50% 50 %(1fr 1fr) -->
+            <footer class="footer"> 
+            <div >
+                <img src="icon/drogaNub.png" alt="">
+            </div> 
+                
+                <div class="footer1">
+                <p >Central administrativa</p>
+                <p >Av. Bom Jesus, 222 | Ed. São Francisco do Sul</p>
+                <p >Santa Clara 22º andar | Içara </p>
+                <p >Santa Catarina - SC</p>
+                </div>
+            </footer>
+            <!--Segundo footer é simples com uma div alinhada ao centro -->
+            <footer class="footer2">
+                <div>
+                    <p>Droga Nube 2023 Copyright &copy; Todos os direitos reservados a Roberta Cristina.</p>
+                </div>
+                
+            </footer>
+    </body>
+</html>

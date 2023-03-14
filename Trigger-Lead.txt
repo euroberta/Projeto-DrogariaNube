@@ -1,0 +1,54 @@
+trigger LeadTrigger on Lead (before insert, before update, after insert, after update) {
+    if(Trigger.isBefore && Trigger.isInsert){
+        
+		List<Task> taskList = new List<Task>();
+        
+        For(Lead lead : Trigger.new){
+            	Task task = new task(
+                    Subject = '	Origem web ',
+                    Status = 'In Progress',
+                   	ActivityDate = Date.today() + 5,
+                   	WhoId = lead.Id      
+               	);
+               	taskList.add(task);
+        }
+        Insert taskList;
+    }
+ 
+ if(Trigger.isBefore){
+        if(Trigger.isInsert || Trigger.isUpdate){
+            for(Lead leadx : Trigger.new){
+           		 if(leadx.State == 'RR'||
+                	leadx.State == 'AP'||
+                    leadx.State == 'AM'||
+                    leadx.State == 'PA'||
+                    leadx.State == 'AC'||
+                    leadx.State == 'RO'||
+                    leadx.State == 'TO'||
+                    leadx.State == 'BA'||
+                    leadx.State == 'RO'||
+                    leadx.State == 'CE'||
+                    leadx.State == 'DF'||
+                    leadx.State == 'ES'||
+                    leadx.State == 'GO'||
+                    leadx.State == 'MA'||
+                    leadx.State == 'MG'||
+                    leadx.State == 'MS'||
+                    leadx.State == 'MT'||
+                    leadx.State == 'PB'||
+                    leadx.State == 'PE'||
+                    leadx.State == 'PB'||
+                    leadx.State == 'PI'||
+                    leadx.State == 'RJ'||
+                    leadx.State == 'PB'||
+                    leadx.State == 'RN'||
+                    leadx.State == 'RS'||
+                    leadx.State == 'SE'||
+                    leadx.State == 'SP'
+                   ){  
+    				leadx.status = 'Desqualificado';
+    			}    
+     		}
+		}
+	}
+}

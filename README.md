@@ -2,7 +2,7 @@
 
 
 <div align="center">
-<p>Site feito para o Bootcamp para desenvolvedor Salesfroce, código comentado </p>
+<p>Código comentado </p>
 </div>
 
 
